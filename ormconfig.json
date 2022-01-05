@@ -1,0 +1,19 @@
+{
+  "type": "postgres",
+  "host": "127.0.0.1",
+  "port": 5432,
+  "username": "red",
+  "password": "password",
+  "database": "card_db",
+  "entities": [
+    "dist/**/*.entity.{ts,js}"
+  ],
+  "migrationsTableName": "migration",
+  "migrations": [
+    "dist/migration/*.{ts,js}"
+  ],
+  "cli": {
+    "migrationsDir": "src/migration"
+  },
+  "ssl": false
+}
